@@ -1,6 +1,6 @@
 {
   "name": "@rubakas/media-responsum",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Responsive breakpoints per device form-factor",
   "main": "index.js",
   "scripts": {
