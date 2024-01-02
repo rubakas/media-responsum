@@ -5,7 +5,7 @@
 Install the plugin from npm:
 
 ```
-$ npm install rubakas-media-responsum
+$ npm install @rubakas/media-responsum
 ```
 
 Then add the plugin to your `tailwind.config.js` file:
@@ -14,41 +14,19 @@ Then add the plugin to your `tailwind.config.js` file:
 // tailwind.config.js
 module.exports = {
   theme: {
-    // ...
-    // Optional. Your plugin might not have any options at all.
-    rubakasMediaResponsum: {
-      // ...
-      YOUR_PLUGIN_CUSTOM_OPTION: true,
-      // ...
-    },
+    // be sure to not override screens
   },
-  variants: {
-    // ...
-    // Optional. Your plugin might not have any variants at all.
-    rubakasMediaResponsum: ['responsive'],
-    // ...
-  },
+  
   plugins: [
     // ...
-    require('rubakas-media-responsum'),
+    require('@rubakas/media-responsum'),
     // ...
   ],
 };
 ```
 
-This plugin will generate following CSS:
-
-```css
-/* ... */
-.example-utility-class {
-  display: block;
-}
-
-.custom-utility-class {
-  background-color: red;
-}
-/* ... */
-```
+This plugin will generate following responsive breakpoints for TailwindCSS:
+`tablet, laptop, desktop, desktop-4k`
 
 ## License
 
